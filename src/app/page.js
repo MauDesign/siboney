@@ -1,65 +1,142 @@
 import Image from "next/image";
+import Countdown from "@/components/Countdown";
 
 export default function Home() {
+  const partyDate = "2026-07-04T16:00:00"; // Example date
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="min-h-screen overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative h-screen flex flex-col items-center justify-between pt-20 pb-0 overflow-hidden">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/img/siboney.jpg"
+          alt="Quinceañera background"
+          fill
           priority
+          className="object-cover brightness-75"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+        <div className="relative z-10 text-center flex flex-col items-center w-full px-4 pt-10">
+          <div className="relative w-full max-w-[90vw] md:max-w-[1200px] h-[30vh] md:h-[40vh] animate-fade-in">
+            <Image
+              src="/img/name-siboney.png"
+              alt="Nombre Siboney"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </div>
+
+        {/* Bottom: Portrait anchored to bottom and overlapping name */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-full max-w-3xl h-[60vh] md:h-[75vh]">
+          <Image
+            src="/img/siboney.png"
+            alt="Siboney Portrait"
+            fill
+            className="object-contain object-bottom"
+            priority
+          />
+          {/* Date Overlay */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+            <p className="text-5xl md:text-7xl font-[family-name:var(--font-cherolina)] text-white drop-shadow-lg">
+              04 Julio 2026
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="py-12 bg-white text-center">
+        <h2 className="max-w-[90vw] text-5xl md:text-6xl font-[family-name:var(--font-cherolina)] gold-text mb-4">Hay momentos en la vida que son especiales por sí solos, pero
+          compartirlos con las personas que más queremos los hace inolvidable</h2>
+        <div>
+
+        </div>
+      </section>
+      {/* Intro Text Block */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center space-y-8">
+          <h3 className="text-5xl font-[family-name:var(--font-cherolina)] gold-text mb-10">Estás Invitado</h3>
+          <p className="text-lg leading-relaxed text-gray-600">
+            Mis padres, Hector Azuara y Jazmin Barrera, tienen el honor de invitarte a celebrar mis XV años.<br /> Acompañame en este día tan especial para mí.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </section>
+
+      {/* Two Columns: Image and Location */}
+      <section className="py-16 bg-gray-50 px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/img/siboney-2.jpeg"
+              alt="Party Venue"
+              fill
+              className="object-cover"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+          <div className="space-y-6">
+            <h3 className="text-4xl font-[family-name:var(--font-cherolina)] gold-text">Ubicación y Hora</h3>
+            <div className="space-y-4 text-gray-700">
+              <div className="flex items-start gap-4">
+                <span className="text-2xl text-gold">📍</span>
+                <div>
+                  <h4 className="font-bold">Lugar del Evento: "Un Chapil"</h4>
+                  <p>Calle Porfirio Díaz y Cuauhtémoc. Col Aguegueyo Platon Sanchez veracruz.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="text-2xl text-gold">⏰</span>
+                <div>
+                  <h4 className="font-bold">Recepción</h4>
+                  <p>A partir de las 04:00 p.m. </p>
+                </div>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/67YMhezoHzAQAZkm9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline border-gold text-gold hover:bg-gold hover:text-white mt-4"
+              >
+                Ver en Google Maps
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Text Block */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-2xl mx-auto text-center">
+          <h3 className="text-3xl font-[family-name:var(--font-cherolina)] italic mb-6">"El tiempo vuela, pero los recuerdos duran para siempre."</h3>
+          <p className="text-gray-600">
+            Cada detalle ha sido preparado con mucho amor para que esta noche sea perfecta.
+          </p>
+        </div>
+      </section>
+
+      {/* Countdown Section */}
+      <section className="py-20 bg-[#1a1a1a] text-white px-4 relative">
+        {/* Subtle decorative background */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-gold)_0%,_transparent_70%)]"></div>
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h2 className="text-4xl font-[family-name:var(--font-cherolina)] mb-12 gold-text">Faltan solo...</h2>
+          <Countdown targetDate={partyDate} />
+        </div>
+      </section>
+
+      {/* RSVP Section */}
+      <section className="py-24 px-4 bg-white text-center">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <h2 className="text-5xl font-[family-name:var(--font-cherolina)] gold-text">Confirma tu asistencia enviándome un mensaje.</h2>
+          <p className="text-2xl text-gray-600 font-light italic">Celebremos juntos.</p>
+
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 text-center text-gray-400 text-sm">
+        <p>© 2026 - Mi Fiesta de 15 Años. Con amor, Siboney.</p>
+      </footer>
+    </main>
   );
 }
