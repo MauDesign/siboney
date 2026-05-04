@@ -107,7 +107,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto text-center">
           <h3 className="text-3xl font-[family-name:var(--font-mistral)] italic mb-6">"El tiempo vuela, pero los recuerdos duran para siempre."</h3>
           <p className="text-gray-600">
-            Cada detalle ha sido preparado con mucho amor para que esta noche sea perfecta.
+            Cada detalle ha sido preparado con mucho amor para que este día sea perfecto.
           </p>
         </div>
       </section>
