@@ -12,7 +12,7 @@ export default function RSVPForm() {
   return (
     <div className="card w-full max-w-lg bg-base-100 shadow-xl mx-auto">
       <div className="card-body">
-        <h2 className="card-title font-[family-name:var(--font-cherolina)] text-4xl mb-4 gold-text">Confirmar Asistencia</h2>
+        <h2 className="card-title font-[family-name:var(--font-mistral)] text-4xl mb-4 gold-text">Confirmar Asistencia</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="form-control">
             <label className="label">

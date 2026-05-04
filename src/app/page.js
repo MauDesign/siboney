@@ -38,14 +38,14 @@ export default function Home() {
           />
           {/* Date Overlay */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            <p className="text-5xl md:text-7xl font-[family-name:var(--font-cherolina)] text-white drop-shadow-lg">
+            <p className="text-5xl md:text-7xl font-[family-name:var(--font-mistral)] text-white drop-shadow-lg">
               04 Julio 2026
             </p>
           </div>
         </div>
       </section>
       <section className="py-12 bg-white text-center">
-        <h2 className="max-w-[90vw] text-5xl md:text-6xl font-[family-name:var(--font-cherolina)] gold-text mb-4">Hay momentos en la vida que son especiales por sí solos, pero
+        <h2 className="max-w-[90vw] text-5xl md:text-6xl font-[family-name:var(--font-mistral)] gold-text mb-4">Hay momentos en la vida que son especiales por sí solos, pero
           compartirlos con las personas que más queremos los hace inolvidable</h2>
         <div>
 
@@ -54,7 +54,7 @@ export default function Home() {
       {/* Intro Text Block */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <h3 className="text-5xl font-[family-name:var(--font-cherolina)] gold-text mb-10">Estás Invitado</h3>
+          <h3 className="text-5xl font-[family-name:var(--font-mistral)] gold-text mb-10">Estás Invitado</h3>
           <p className="text-lg leading-relaxed text-gray-600">
             Mis padres, Hector Azuara y Jazmin Barrera, tienen el honor de invitarte a celebrar mis XV años.<br /> Acompañame en este día tan especial para mí.
           </p>
@@ -73,7 +73,7 @@ export default function Home() {
             />
           </div>
           <div className="space-y-6">
-            <h3 className="text-4xl font-[family-name:var(--font-cherolina)] gold-text">Ubicación y Hora</h3>
+            <h3 className="text-4xl font-[family-name:var(--font-mistral)] gold-text">Ubicación y Hora</h3>
             <div className="space-y-4 text-gray-700">
               <div className="flex items-start gap-4">
                 <span className="text-2xl text-gold">📍</span>
@@ -105,7 +105,7 @@ export default function Home() {
       {/* Text Block */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto text-center">
-          <h3 className="text-3xl font-[family-name:var(--font-cherolina)] italic mb-6">"El tiempo vuela, pero los recuerdos duran para siempre."</h3>
+          <h3 className="text-3xl font-[family-name:var(--font-mistral)] italic mb-6">"El tiempo vuela, pero los recuerdos duran para siempre."</h3>
           <p className="text-gray-600">
             Cada detalle ha sido preparado con mucho amor para que esta noche sea perfecta.
           </p>
@@ -119,7 +119,7 @@ export default function Home() {
           <div className="w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-gold)_0%,_transparent_70%)]"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-[family-name:var(--font-cherolina)] mb-12 gold-text">Faltan solo...</h2>
+          <h2 className="text-4xl font-[family-name:var(--font-mistral)] mb-12 gold-text">Faltan solo...</h2>
           <Countdown targetDate={partyDate} />
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
       {/* RSVP Section */}
       <section className="py-24 px-4 bg-white text-center">
         <div className="max-w-4xl mx-auto space-y-6">
-          <h2 className="text-5xl font-[family-name:var(--font-cherolina)] gold-text">Confirma tu asistencia enviándome un mensaje.</h2>
+          <h2 className="text-5xl font-[family-name:var(--font-mistral)] gold-text">Confirma tu asistencia enviándome un mensaje.</h2>
           <p className="text-2xl text-gray-600 font-light italic">Celebremos juntos.</p>
 
         </div>
