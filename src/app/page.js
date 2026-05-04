@@ -38,7 +38,7 @@ export default function Home() {
           />
           {/* Date Overlay */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            <p className="text-5xl md:text-7xl font-[family-name:var(--font-mistral)] text-white drop-shadow-lg">
+            <p className="text-5xl md:text-7xl font-[family-name:var(--font-cherolina)] text-white drop-shadow-lg">
               04 Julio 2026
             </p>
           </div>

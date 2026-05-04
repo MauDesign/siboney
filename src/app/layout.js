@@ -17,6 +17,11 @@ const mistral = localFont({
   variable: "--font-mistral",
 });
 
+const cherolina = localFont({
+  src: "../../public/fonts/cherolina/Cherolina.ttf",
+  variable: "--font-cherolina",
+});
+
 
 export const metadata = {
   title: "Mis 15 Años - Invitación",
@@ -27,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="es"
-      className={`${playfair.variable} ${montserrat.variable} ${mistral.variable} h-full antialiased`}
+      className={`${playfair.variable} ${montserrat.variable} ${mistral.variable} ${cherolina.variable} h-full antialiased`}
     >
       <body className="min-h-full font-[family-name:var(--font-montserrat)]">{children}</body>
     </html>
