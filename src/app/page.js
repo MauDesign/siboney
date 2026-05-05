@@ -37,14 +37,13 @@ export default function Home() {
             priority
           />
           {/* Date Overlay */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-            <p className="text-5xl md:text-7xl font-[family-name:var(--font-cherolina)] text-white drop-shadow-lg">
-              04 Julio 2026
-            </p>
-          </div>
+
         </div>
       </section>
       <section className="py-12 bg-white text-center">
+        <p className="text-5xl md:text-7xl font-[family-name:var(--font-cherolina)] text-black drop-shadow-lg">
+          04 Julio 2026
+        </p>
         <h2 className="max-w-[90vw] text-5xl md:text-6xl font-[family-name:var(--font-mistral)] gold-text mb-4">Hay momentos en la vida que son especiales por sí solos, pero
           compartirlos con las personas que más queremos los hace inolvidable</h2>
         <div>
